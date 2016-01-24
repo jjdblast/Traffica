@@ -1,0 +1,294 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Metropia </title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		 <!-- animated-css -->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+		
+		<script>
+			new WOW().init();
+		</script>
+		<!-- animated-css -->
+		  <!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!-- start-smoth-scrolling-->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!--webfonts-->
+		<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!--//webfonts-->
+		<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!--//End-top-nav-script-->
+	</head>
+<body style="">
+		<div class="bg">
+		<!-- start-header-->
+			<div id="home" class="header wow bounceInDown animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceInDown;">
+					<div class="top-header">
+						<div class="container">
+						</div>
+				</div>
+			</div>
+			<!-- //End-header-->
+			<!-- banner -->
+			
+		</div>
+			
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head text-left">
+						<h2>User ID insights </h2>
+						<span> </span>
+					</div>
+					<p>Our website analyses and graphically represents Tucson's traffic data collected through various users. We have taken raw data curated by <a href=”http://www.metropia.com”>Metropia</a> and analysed them to extract meaningful information such as vehicular speed information, peak traffic hours and the busiest roads of Tucson.
+						Scroll down to view our illustrations of Metropia's data.</p>
+					<div class="services-grids text-center">
+						<div class="col-md-4" id="chartOne">
+							<!-- ChartOne -->
+							<script type="text/javascript" src="js/drawNew.js"></script>
+						</div>
+					</div>
+						
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+
+
+			<div class="portfolio">
+				<div class="portfolio-top">
+					<div class="col-md-8">
+						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+							<h3>Tucson Metro Map</h3>
+							<p>The map below plots all the readings teaken over a month from selected users. It shows some of the busiest routes in Tucson. This data was collected and provided to us by Metropia.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="clearfix"> </div>
+			<!--- Other Expertise -->
+			<div id="port" class="expertise">
+			<!-- <iframe id="iframe" src="d3map.html" scrolling="no" width="100%" height="400 px" frameborder="0" -webkit-transform: scale(0.75);
+        ></iframe> -->
+
+
+		  	<div class="container">
+		
+		
+
+		  <div class="tab-content">
+		    		      <iframe id="iframe" src="d3map.html" scrolling="no" width="110%" height="600px" frameborder="0" -webkit-transform: scale(0.75);
+        		></iframe>
+		 
+        			 </div>
+
+
+		</div>
+		    <div class="portfolio">
+				<div class="portfolio-top">
+					<div class="col-md-8">
+						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+							<h3>Speed Gauge </h3>
+							<p>
+								The map shows all paths in the Tucson area and the speed of the average driver. The path is color-coded to indicate the driver's speed (eg. 'Red' part along the path mean that the driver was occassionally speeding and 'Yellow' indicates slow moving traffic).
+								</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			 	<div class="container">
+		
+		
+
+		  <div class="tab-content">
+     			 <iframe id="iframe" src="Hackaz2.html" scrolling="no" width="110%" height="600px" frameborder="0" -webkit-transform: scale(0.75);
+        		></iframe>
+    		
+
+		  </div>
+
+
+		</div>
+			</div>
+			<!--- Other Expertise -->
+			<!--- portfolio -->
+			
+
+			<!--- portfolio -->
+			<!-- about -->
+			<!---start-about-->
+		<div class="about">
+			<div class="wrap"> 
+				<div class="about-head">
+					<h1>KEY METRICs</h1>
+					<span> </span>
+				</div>
+				<!---start-about-time-line-->
+				<div class="about-time-line">
+					<li>
+							<div class="cbp_tmicon img1"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+								<h2>Congestion </h2>
+								<p>Our observations indicate that traffic congestion in Tuscon is at its peak from 9 AM to 11 AM </p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon1 img2"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+								<h2> Time Spent </h2>
+								<p>Our estimates are that a average commuter wastes anywhere around 4- 14 hrs a week in traffic </p>
+							</div>
+					</li><br>
+					<li>
+							<div class="cbp_tmicon2 img3"> </div>
+							<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+								<h2>Fuel Spent  </h2>
+								<p> Based upon the stationary time and assuming a average fuel efficency of 45 Mpg We estimate that around 1400 gallons of gasoline is wasted each week</p>
+							</div>
+					</li>
+					<li>
+							<div class="cbp_tmicon3 img4"> </div>
+							<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+								<h2> Grid Locks</h2>
+								<p>Areas such as Downtown Tuscon are prone to routine congestion and gridlocks . They make up for nearly 20% of the traffic problem metrics used here </p>
+							</div>
+					</li>
+					
+				<!---//End-about-time-line-->
+			<!-- about -->
+				</div>
+			</div>
+		</div>
+			
+			<div id="team" class="team-members">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3>our amazing team</h3>
+							<p>Without whom this would not have been possible</p>
+						</div>
+						<div class="tm-head-grids" stylr="display: inline;">
+							<div class="tm-head-grid ">
+								<img src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-xla1/v/t1.0-1/p160x160/1524881_10153881778469974_27080580500848907_n.jpg?oh=7453dcad50899864427f91745b37f950&oe=5742EE8C" alt="">
+								<h4>Anusha Rajan</h4>
+											
+							</div>
+							<div class="tm-head-grids">
+							<div class="tm-head-grid ">
+								<img src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-xlt1/v/t1.0-1/p160x160/11427206_10204681634306359_3516693753689385953_n.jpg?oh=05894b3cc8635674fb3505ee98eee88a&oe=573131C3" alt="">
+								<h4>Aravind Sreenivasa</h4>
+														
+							</div>
+							<div class="tm-head-grids">
+							<div class="tm-head-grid ">
+								<img src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-xpa1/v/t1.0-1/c64.64.797.797/s160x160/541650_4499384684767_308125342_n.jpg?oh=10f39f21252f94beecf68b5a780d839b&oe=5741A830" alt="">
+								<h4>Guru Vignesh</h4>
+								
+								
+							</div>
+							<div class="tm-head-grid ">
+								<img src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-xal1/v/t1.0-1/p160x160/1935852_10153817647043245_2558547735339341038_n.jpg?oh=10077e5b4e60cf6c2a9ed398aec28f8e&oe=5731BCD7" alt="">
+								<h4>Sri Ram Narayanan</h4>
+											
+							</div>
+							<div class="tm-head-grid ">
+								<img src="https://scontent-ord1-1.xx.fbcdn.net/hprofile-xlp1/v/t1.0-1/c17.0.160.160/p160x160/10391521_1105640255116_6139767_n.jpg?oh=3ba5af23763401a6a13d669854858f00&oe=574232A7" alt="">
+								<h4>Prashanth R</h4>
+																
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<p class="team-info">We are students at Arizona State University, Tempe. This website is the product of our collaborative effort at Hack Arizona (Jan 22-24, 2016). Thanks for stopping by. Go SunDevils!</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		
+			
+			<div id="contact" class="contact">
+				<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-6">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+							<h3>Contact Us</h3>
+							<label>Drop us an email and say hello! We are a really nice bunch of people :)</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+					
+									
+								<!-- 		<p><span class="c-pluse"> </span><a href="#">sriram.therock</a></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+
+										<p><span class="c-face"> </span><a href="#">facebook.com/sriram.therock</a></p>
+										<p><span class="c-pin"> </span><a href="#">pinterest.com/sriram.therock</a></p>
+									</div> -->
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+				</div>
+				<!-- copy-right -->
+				</div>
+				</div>
+			</div>
+			<!-- contact -->
+		
+	
+
+
+<a href="#" id="toTop">To Top</a>
+
+
+</body>
+</html>
+
